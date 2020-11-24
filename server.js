@@ -104,7 +104,7 @@ app.get("/show", (req, res) => {
             if (property == 'uczen') {
                 row += `<td>${property}: <input type="checkbox" ${user[property]} disabled></td>`;
             } else if (property == 'log') {
-                row += `<td>${property}: ${user[property]}`;
+                row += `<td>user: ${user[property]}`;
             } else if (property == 'pass') {
                 row += ` - ${user[property]}</td>`;
             } else {
